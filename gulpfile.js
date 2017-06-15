@@ -142,7 +142,7 @@ gulp.task('sass', function () { // Создаем таск Sass
 gulp.task('browser-sync', function () { // Создаем таск browser-sync
     browserSync({ // Выполняем browserSync
         proxy: {
-            target: 'template' // Директория для сервера - app
+            target: 'appassis' // Директория для сервера - app
         },
         ghostMode: {
             clicks: true,
