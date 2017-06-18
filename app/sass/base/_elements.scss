@@ -74,3 +74,59 @@
     color: $green;
   }
 }
+
+
+.breadcrumbs{
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 20px 25px;
+  box-sizing: border-box;
+}
+
+.breadcrumbs__list {
+		list-style-type: none;
+		float: left;
+		padding: 0;
+    margin: 0;
+    // top: 4px;
+    position: relative;
+		li {
+			display: inline-block;
+			position: relative;
+      font-size: 14px;
+      line-height: 15px;
+			color: $green;
+		  font-weight: 400;
+      margin: 0 10px 0 12px;
+			a {
+			  color: $green;
+        font-weight: 400;
+        position: relative;
+        &:after{
+          content: "";
+          border-bottom: 1px dashed $green;
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: 0;
+        }
+			}
+			&:first-of-type {
+				margin-left: 0;
+			}
+
+			&:after {
+				content: "→";
+				position: absolute;
+				right: -18px;
+				bottom: 0;
+			}
+			&:last-of-type {
+				&:after, &:before {
+					content: none;
+				}
+			}
+
+		}
+	}
