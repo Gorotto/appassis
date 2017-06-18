@@ -1,0 +1,151 @@
+.billing-wrap{
+  width: 100%;
+  float: left;
+  padding: 60px 0 15px;
+  box-sizing: border-box;
+}
+
+.billing-wrap__tarif, .billing-wrap__balans{
+  width: 50%;
+  float: left;
+  text-align: center;
+  position: relative;
+  padding: 0 45px 70px;
+  box-sizing: border-box;
+  h3{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 25px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    float: left;
+  }
+}
+.billing-wrap__tarif{
+  .tarif{
+    height: 56px;
+    background-color: #fd4095;
+    float: left;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 51px;
+  }
+  .tarif-date{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 30px 0 45px;
+    span{
+      color: #333;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+  .green-btn{
+    min-width: 150px;
+    outline: none;
+    border: 1px solid $green;
+    float: left;
+    &:first-of-type{
+      margin-right: 27px;
+    }
+  }
+  &:after{
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: #e0e0e0;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+
+.billing-wrap__balans_extend{
+  width: 100%;
+  float: left;
+  position: relative;
+  padding-top: 15px;
+  box-sizing: border-box;
+  p{
+    color: #333;
+    margin: 0;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+    float: left;
+    margin-right: 30px;
+  }
+}
+
+
+.billing-wrap__balans_extend-item{
+  float: left;
+  margin-right: 29px;
+  display: inline-block;
+  &:last-of-type{
+    margin-right: 0;
+  }
+  .radio {
+    vertical-align: top;
+    width: 14px;
+    height: 14px;
+
+  }
+  .radio + label {
+    cursor: pointer;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+
+  }
+  .radio:not(checked) {
+    position: absolute;
+    opacity: 0;
+  }
+  .radio:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 20px;
+  }
+  .radio:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: #FFF;
+  }
+  .radio:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ccc;
+    // opacity: 0;
+    transition: all .2s;
+  }
+  .radio:checked + label:after {
+    // opacity: 1;
+    background-color: $green;
+  }
+  .radio:checked + label:before {
+    border: 1px solid $green;
+  }
+
+
+}
