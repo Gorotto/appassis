@@ -1,0 +1,66 @@
+.table-wrap{
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.table-wrap__title{
+  width: 100%;
+  float: left;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  span{
+    position: relative;
+    text-align: left;
+    float: left;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 48px;
+  }
+}
+
+.table-wrap__row{
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid #e6e6e6;
+  span{
+    position: relative;
+    text-align: left;
+    float: left;
+    color: #333;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 48px;
+  }
+  .status{
+    color: $green;
+  }
+}
+
+.table-wrap__title, .table-wrap__row{
+  .date{
+    min-width: 185px;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  .name{
+    min-width: 125px;
+  }
+  .mail{
+    min-width: 160px;
+  }
+  .phone{
+    min-width: 145px;
+  }
+  .status{
+    min-width: 140px;
+  }
+  .ammount{
+    min-width: 89px;
+  }
+}
