@@ -31,3 +31,25 @@
     font-weight: 400;
   }
 }
+
+
+.green-btn{
+  min-width: 208px;
+  height: 41px;
+  background-color: #00aeaf;
+  border-radius: 5px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  &:hover{
+    background-color: #fff;
+    border: 1px solid $green;
+    color: $green;
+  }
+}
