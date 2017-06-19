@@ -1,4 +1,4 @@
-.my-apps-wrap__info, .edit-profile__wrap_info{
+.my-apps-wrap__info, .edit-profile__wrap_info, .bill__wrap_info{
   width: 100%;
   float: left;
   position: relative;
@@ -9,7 +9,7 @@
   margin-bottom: 25px;
 }
 
-.my-apps-wrap{
+.my-apps-wrap, .bill__wrap{
   width: 100%;
   float: left;
   padding: 0 25px;
@@ -24,7 +24,7 @@
   }
 }
 
-.my-apps-wrap__info_row, .edit-profile__wrap_info-row{
+.my-apps-wrap__info_row, .edit-profile__wrap_info-row, .bill__wrap_info-row{
   width: 100%;
   float: left;
   position: relative;

@@ -19,3 +19,9 @@ $(document).on('click', '.anketa__select--option > .anketa__select--trigger', fu
     $('.anketa__select--option').slideUp('400');
 });
 /*close anketa select*/
+
+
+var dp = $('.current-day').datepicker().data('datepicker');
+
+dp.selectDate(new Date());
+$('.datepicker-here').data('datepicker')

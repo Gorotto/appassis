@@ -1,4 +1,4 @@
-.edit-profile__wrap{
+.edit-profile__wrap, .bill__wrap{
   width: 100%;
   float: left;
   padding: 0 25px 50px;
@@ -10,11 +10,12 @@
   }
 }
 
-.edit-profile__wrap_info-row{
+.edit-profile__wrap_info-row, .bill__wrap_info-row{
   margin-bottom: 20px;
   input{
     text-align: left;
   }
+
   .green-btn, .upload+label{
     float: left;
     min-width: 161px;
@@ -44,4 +45,36 @@
       }
     }
   }
+  .billing-wrap__balans_extend-item{
+    padding-top: 11px;
+    box-sizing: border-box;
+  }
+  p{
+    width: 100%;
+    float: left;
+    margin: 0;
+    text-align: left;
+    color: #333;
+    font-size: 12px;
+    font-weight: 300;
+    padding-left: 193px;
+    box-sizing: border-box;
+  }
+}
+
+
+.used-field{
+  min-width: 190px;
+  height: 40px;
+  background-color: #ebebeb;
+  border-radius: 5px;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 40px;
+  text-align: center;
+  color: #333;
 }

@@ -39,6 +39,7 @@
 
 <!-- end header.html-->
 
+<!-- main container-->
 <div class="container">
 <!-- start sidebar.html-->
 <aside class="aside">
@@ -58,57 +59,59 @@
 </aside>
 
 <!-- end sidebar.html-->
-  <div class="contents">
-    <div class="content-wrap">
-      <div class="title-panel">
-        <p>Заказы с мобильных приложений</p>
+<div class="contents">
+  <div class="content-wrap">
+    <div class="title-panel">
+      <p>Счета</p>
+    </div>
+    <div class="bill__wrap">
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+           <li><a href="#">Список счетов</a></li>
+           <li>Создание счета</li>
+         </ul>
       </div>
-      <div class="table-wrap">
-        <div class="table-wrap__title">
-          <span class="date">Дата</span>
-          <span class="name">Имя</span>
-          <span class="mail">Email</span>
-          <span class="phone">Телефон</span>
-          <span class="status">Статус</span>
-          <span class="ammount">Сумма</span>
+      <form class="bill__wrap_info">
+        <div class="bill__wrap_info-row">
+          <span>Название счета</span>
+          <input type="text"/>
         </div>
-        <div class="table-wrap__row">
-          <span class="date">2017-05-15 14:28:45</span>
-          <span class="name">Константин</span>
-          <span class="mail">client@client.com</span>
-          <span class="phone">380965144489</span>
-          <span class="status">Новый</span>
-          <span class="ammount">$2.97</span>
+        <div class="bill__wrap_info-row">
+          <span>Дата документа</span>
+          <input type="text" class="datepicker-here current-day" />
         </div>
-        <div class="table-wrap__row">
-          <span class="date">2017-05-15 14:28:45</span>
-          <span class="name">Константин</span>
-          <span class="mail">client@client.com</span>
-          <span class="phone">380965144489</span>
-          <span class="status">Новый</span>
-          <span class="ammount">$2.97</span>
+        <div class="bill__wrap_info-row">
+          <span>Получатель платежа</span>
+          <div class="used-field">Товарищество с ограниченной ответственностью "E-Commerce"</div>
         </div>
-        <div class="table-wrap__row">
-          <span class="date">2017-05-15 14:28:45</span>
-          <span class="name">Константин</span>
-          <span class="mail">client@client.com</span>
-          <span class="phone">380965144489</span>
-          <span class="status">Новый</span>
-          <span class="ammount">$2.97</span>
+        <div class="bill__wrap_info-row">
+          <span>Срок оплаты счета</span>
+          <input type="text" class="datepicker-here current-day" />
         </div>
-        <div class="table-wrap__row">
-          <span class="date">2017-05-15 14:28:45</span>
-          <span class="name">Константин</span>
-          <span class="mail">client@client.com</span>
-          <span class="phone">380965144489</span>
-          <span class="status">Новый</span>
-          <span class="ammount">$2.97</span>
+        <div class="bill__wrap_info-row">
+          <span>Назначение платежа</span>
+          <div class="billing-wrap__balans_extend-item">
+            <input type="radio" class="radio" id="radio1" name="radio">
+            <label for="radio1">6 месяцев</label>
+          </div>
+          <div class="billing-wrap__balans_extend-item">
+            <input type="radio" class="radio" id="radio2" name="radio">
+            <label for="radio2">12 месяцев</label>
+          </div>
+          <p>* Оплата за 6 месяцев согласно тарифу</p>
         </div>
-
-      </div>
+        <div class="bill__wrap_info-row">
+          <span>Сумма, тг.</span>
+          <input type="text" placeholder="Введите сумму"/>
+        </div>
+      </form>
+      <a href="" class="white-btn">Отмена</a>
+      <a href="" class="green-btn">Сохранить</a>
     </div>
   </div>
 </div>
+</div>
+<!-- close container-->
 
 
 <!-- start html_close.html-->
