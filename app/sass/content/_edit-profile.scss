@@ -1,0 +1,47 @@
+.edit-profile__wrap{
+  width: 100%;
+  float: left;
+  padding: 0 25px 50px;
+  box-sizing: border-box;
+  .green-btn, .white-btn{
+    float: left;
+    min-width: 150px;
+    margin-right: 15px;
+  }
+}
+
+.edit-profile__wrap_info-row{
+  margin-bottom: 20px;
+  input{
+    text-align: left;
+  }
+  .green-btn, .upload+label{
+    float: left;
+    min-width: 161px;
+    width: 161px;
+    margin: 0;
+  }
+  .avatar{
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin-left: 30px;
+    position: relative;
+    margin-top: 8px;
+    img{
+      size: 100%;
+    }
+    .reset-avatar{
+      position: absolute;
+      right: -18px;
+      top: -11px;
+      margin: 0;
+      width: auto;
+      cursor: pointer;
+      line-height: normal;
+      i{
+        color: #ea162f;
+      }
+    }
+  }
+}

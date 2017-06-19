@@ -1,0 +1,61 @@
+.my-apps-wrap__info, .edit-profile__wrap_info{
+  width: 100%;
+  float: left;
+  position: relative;
+  padding:  25px 0;
+  box-sizing: border-box;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 25px;
+}
+
+.my-apps-wrap{
+  width: 100%;
+  float: left;
+  padding: 0 25px;
+  box-sizing: border-box;
+  .green-btn{
+    float: left;
+    margin-left: 15px;
+    // color: #fff;
+  }
+  .white-btn{
+    float: left;
+  }
+}
+
+.my-apps-wrap__info_row, .edit-profile__wrap_info-row{
+  width: 100%;
+  float: left;
+  position: relative;
+  &:first-of-type{
+    margin-bottom: 20px;
+  }
+  span{
+    text-align: right;
+    width: 165px;
+    float: left;
+    display: inline-block;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 25px;
+    line-height: 41px;
+  }
+  input{
+    min-width: 190px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    color: #333;
+  }
+}
