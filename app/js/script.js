@@ -10,18 +10,19 @@ $(document).on('click', '.js-search-option', function (event) {
         optionBox.slideDown('400');
     }
 });
-$(document).on('click', '.anketa__select--option > .anketa__select--trigger', function (event) {
+$(document).on('click', '.anketa__select--option > a', function (event) {
     event.preventDefault();
     var optionName = $(this).text(),
-        optionPlace = $(this).closest('.anketa__form').find('.anketa__select');
+        optionPlace = $(this).closest('.custom-select').find('.select');
     optionPlace.val(optionName);//меняем имя
-    $('.js-search-option').removeClass('open');
+    $('.select__trigger').removeClass('open');
     $('.anketa__select--option').slideUp('400');
 });
 /*close anketa select*/
 
 
-var dp = $('.current-day').datepicker().data('datepicker');
 
-dp.selectDate(new Date());
 $('.datepicker-here').data('datepicker')
+// var dp = $('.current-day').datepicker().data('datepicker');
+//
+// dp.selectDate(new Date());

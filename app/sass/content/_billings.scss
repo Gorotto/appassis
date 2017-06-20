@@ -1,0 +1,36 @@
+.billings-wrap{
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  .white-btn, .green-btn{
+    margin-bottom: 25px;
+  }
+}
+
+
+.naiming-billing{
+  min-width: 160px;
+  padding-left: 15px;
+  float: left;
+  box-sizing: border-box;
+}
+
+.date-billing{
+  min-width: 120px;
+}
+
+.ammount-billing{
+  min-width: 120px;
+}
+
+.name-billing{
+  min-width: 350px;
+}
+
+.status-billing{
+  min-width: 90px;
+}
