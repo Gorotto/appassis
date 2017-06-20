@@ -1,0 +1,58 @@
+
+
+.steps-wrap{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.07);
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 35px;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+.steps-wrap__center-content{
+  margin: 0 auto;
+  float: none;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  &:before{
+    content: "";
+    background-image: url("../img/icons/long-arrows.png");
+    width: 121px;
+    height: 51px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -174px;
+    margin-top: 120px;
+
+  }
+  &:after{
+    content: "";
+    background-image: url("../img/icons/long-arrows.png");
+    width: 121px;
+    height: 51px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -174px;
+    margin-top: -140px;
+
+  }
+}
+
+.steps-wrap__center-content-thumb{
+  margin: 50px 0;
+  float: left;
+  display: inline-block;
+  width: 100%;
+  img{
+    width: 122px;
+    height: 122px;
+    object-fit: contain;
+  }
+}
