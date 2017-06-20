@@ -137,6 +137,8 @@
   width: 150px;
   display: inline-block;
   position: relative;
+  margin-left: 15px;
+  margin-top: 25px;
 }
 
 .select{
@@ -158,6 +160,7 @@
   color: #333;
   cursor: pointer;
   z-index: 10;
+
   // @include breakpoint(max-width 660px){
   //   width: 100%;
   //   font-size: 19px;
