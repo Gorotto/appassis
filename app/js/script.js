@@ -26,3 +26,14 @@ $('.datepicker-here').data('datepicker')
 // var dp = $('.current-day').datepicker().data('datepicker');
 //
 // dp.selectDate(new Date());
+
+
+$(".toogle-title").click(function () {
+  $(this).next(".toogle-content").slideToggle();
+    if(  $(this).children().hasClass('arrow-active') ){
+       $(this).parent('.toogle-row').find('.arrow').removeClass('arrow-active');
+     }else{
+         $(this).parent('.toogle-row').find('.arrow').addClass('arrow-active');
+     }
+     return false;
+});
