@@ -11,6 +11,8 @@
   width: 100%;
   float: left;
   position: relative;
+  padding: 20px 0;
+  box-sizing: border-box;
 }
 
 .setting-wrap__panel_pic{
@@ -74,7 +76,7 @@
       color: #707070;
       font-size: 16px;
       font-weight: 400;
-      line-height: 49px;
+      line-height: 40px;
     }
   }
 }
@@ -150,6 +152,10 @@
   display: none;
 }
 
+.setting-wrap__content-thems{
+  padding: 30px 0 40px;
+  box-sizing: border-box;
+}
 
 .setting-wrap__content-thems,
 .setting-wrap__content-navigations,
@@ -159,8 +165,7 @@
   width: 100%;
   float: left;
   position: relative;
-  padding: 30px 0 40px;
-  box-sizing: border-box;
+
 }
 
 
@@ -172,7 +177,10 @@
   float: left;
   position: relative;
   margin-right: 40px;
-  &:nth-of-type(4){
+  // &:nth-of-type(4){
+  //   margin-right: 0;
+  // }
+  &:last-of-type{
     margin-right: 0;
   }
   &:nth-of-type(8){
@@ -230,7 +238,8 @@
   width: 100%;
   cursor: pointer;
   float: left;
-
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 
@@ -253,6 +262,7 @@
     margin-top: -11px;
     position: absolute;
     text-align: center;
+    // transform: rotate(270deg);
     i{
       color: #333;
       display: inline-block;
@@ -260,12 +270,13 @@
       font-weight: 400;
       position: relative;
       top: -14px;
+      left: 2px;
     }
   }
 }
 
 .arrow-active{
-  transform: rotate(180deg);
+  transform: rotate(90deg);
   transition: all .7s ease;
 }
 
@@ -282,18 +293,25 @@
     width: 150px;
   }
 }
+
+.new-design__wrap{
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-bottom: 30px;
+}
 .new-design__wrap,
 .splesh__wrap,
 .icon__wrap{
   width: 100%;
   float: left;
   position: relative;
-  margin-bottom: 30px;
+
 }
 
 .icon__wrap{
   .upload-button{
-    width: 75%;
+    width: 74%;
     .upload+label{
       float: left;
     }
@@ -305,7 +323,7 @@
       font-size: 12px;
       font-weight: 300;
       line-height: 38px;
-      margin-left: 30px;
+      margin-left: 24px;
     }
   }
 }
@@ -345,7 +363,7 @@
 
 .icons__wrap{
   float: left;
-  width: 75%;
+  width: 74%;
   position: relative;
   margin-top: 22px;
 }
@@ -356,4 +374,39 @@
   img{
     size: 100%;
   }
+}
+
+
+.iphone-wrap{
+  width: 262px;
+  height: 532px;
+  background-image: url("../img/iphone.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  float: right;
+  position: relative;
+}
+
+.iphone-wrap__pic{
+  width: 233px;
+  height: 414px;
+  position: absolute;
+  left: 6%;
+  margin-top: 22%;
+  img{
+    size: 100%;
+  }
+}
+
+
+.toogle-content{
+  width: 100%;
+  float: left;
+  display: inline-block;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
 }

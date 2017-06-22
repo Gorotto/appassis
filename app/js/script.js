@@ -37,3 +37,17 @@ $(".toogle-title").click(function () {
      }
      return false;
 });
+
+
+
+jQuery(".page__tabs_target").click(function (e) {
+   jQuery(".page__tabs_target").removeClass("page__tabs_active");
+    jQuery(this).addClass("page__tabs_active");
+    jQuery('.setting-wrap__content_item').removeClass('current');
+
+     e.preventDefault();
+   var t = jQuery(this).attr('data-tab');
+
+   jQuery(".setting-wrap__content_item").fadeOut(500), jQuery("#" + t).addClass('current').fadeIn(500);
+
+});
