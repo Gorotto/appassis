@@ -150,6 +150,7 @@
   float: left;
   position: relative;
   display: none;
+  // text-align: center;
 }
 
 .setting-wrap__content-thems{
@@ -172,11 +173,11 @@
 .setting-wrap__content-thems__item,
 .setting-wrap__content-navigations__item,
 .setting-wrap__content-design__item{
-  width: 102px;
+  width: 106px;
   height: 169px;
   float: left;
   position: relative;
-  margin-right: 40px;
+  margin-right: 35px;
   // &:nth-of-type(4){
   //   margin-right: 0;
   // }

@@ -78,7 +78,24 @@
   }
 }
 
-
+.delete-btn{
+  float: right;
+  min-width: 138px;
+  display: inline-block;
+  height: 40px;
+  background-color: #d81313;
+  border: 1px solid #d81313;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 40px;
+  color: #fff;
+  &:hover{
+    border: 1px solid #d81313;
+    background-color: #fff;
+    color: #d81313;
+  }
+}
 .breadcrumbs{
   width: 100%;
   float: left;
@@ -221,5 +238,30 @@
     @include breakpoint(max-width 660px){
       font-size: 15px;
     }
+  }
+}
+
+
+.layer-item__about{
+  background-color: #21a2f4;
+}
+
+.layer-item__photo{
+  background-color: #37d371;
+}
+
+.layer-item__cart{
+  background-color: #ebdf23;
+}
+
+.layer-item__news{
+  background-color: #bb2eac;
+}
+
+.layer-item__email{
+  background-color: #37d371;
+  i{
+    color: #fff;
+    transform: translateY(45%);
   }
 }
