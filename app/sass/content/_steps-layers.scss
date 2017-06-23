@@ -9,6 +9,11 @@
   .green-btn{
     float: left;
   }
+  .add-btn{
+    float: none;
+    margin: 0 auto;
+    display: inline-block;
+  }
   .toogle-content{
     padding: 0;
     box-sizing: border-box;
@@ -23,7 +28,7 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
-    margin-top: 20px;
+    margin-top: 0;
     b{
       font-weight: 700;
     }
@@ -34,12 +39,14 @@
   input{
     text-align: left;
     float: left;
+    margin-bottom: 20px;
     &:hover{
       color: #333;
     }
   }
   .long-input{
     width: 100%;
+    margin-bottom: 20px;
   }
   &:last-of-type{
     border-bottom: none;
@@ -48,6 +55,13 @@
       margin: 10px auto 0;
       float: none;
     }
+  }
+  .billing-wrap__balans_extend{
+    padding: 0;
+  }
+  .custom-select{
+    float: left;
+    margin: 0;
   }
 }
 
@@ -116,4 +130,37 @@
   padding-left: 10px;
   box-sizing: border-box;
   margin-left: 20px;
+}
+
+
+.redactor-wrap{
+  width: 100%;
+  height: 207px;
+  float: left;
+}
+
+
+.category-wrap{
+  width: 100%;
+  float: left;
+  position: relative;
+  p{
+    width: 100%;
+    float: left;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333;
+    margin: 15px 0;
+    a{
+      color: $green;
+    }
+  }
+  button{
+    float: left;
+  }
+  .white-btn{
+    margin-left: 30px;
+  }
 }

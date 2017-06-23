@@ -266,7 +266,7 @@
   }
 }
 
-.layer-item__facebook{
+.layer-item__facebook, .layer-item__html, .layer-item__vk{
   background-color: #374df2;
   i{
     color: #fff;
@@ -274,8 +274,32 @@
   }
 }
 
-.layer-item__google{
+.layer-item__google, .layer-item__youtube{
   background-color: #d81313;
+  i{
+    color: #fff;
+    transform: translateY(45%);
+  }
+}
+
+.layer-item__instagram{
+  background-color: #c5c5c5;
+  i{
+    color: #fff;
+    transform: translateY(45%);
+  }
+}
+
+.layer-item__twitter{
+  background-color: #21a2f4;
+  i{
+    color: #fff;
+    transform: translateY(45%);
+  }
+}
+
+.layer-item__web{
+  background-color: #f6eb33;
   i{
     color: #fff;
     transform: translateY(45%);
