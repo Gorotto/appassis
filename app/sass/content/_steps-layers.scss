@@ -197,3 +197,35 @@
   float: left;
   margin-top: 15px;
 }
+
+
+.images-wrap{
+  width: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+  .green-btn{
+    margin-top: 50px;
+    float: none;
+  }
+}
+
+.images-wrap__item{
+  width: 106px;
+  height: 180px;
+  position: relative;
+  margin-right: 35px;
+  float: left;
+  position: relative;
+  img{
+    size: 100%;
+  }
+  .closes{
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+  }
+  &:last-of-type{
+    margin-right: 0;
+  }
+}

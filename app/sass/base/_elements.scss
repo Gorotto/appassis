@@ -318,8 +318,6 @@
 
 
 
-
-
 .closes{
   float: left;
   display: block;
@@ -328,4 +326,5 @@
   background-size: contain;
   background-image: url("../img/icons/close-icon.png");
   size: 10px;
+  cursor: pointer;
 }
