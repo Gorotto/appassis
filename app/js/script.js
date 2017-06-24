@@ -39,6 +39,13 @@ $(".toogle-title").click(function () {
 });
 
 
+$(".category-wrap__item_title").click(function () {
+  $(this).next(".category-wrap__item_row").slideToggle();
+
+     return false;
+});
+
+
 
 jQuery(".page__tabs_target").click(function (e) {
    jQuery(".page__tabs_target").removeClass("page__tabs_active");
