@@ -51,3 +51,17 @@ jQuery(".page__tabs_target").click(function (e) {
    jQuery(".setting-wrap__content_item").fadeOut(500), jQuery("#" + t).addClass('current').fadeIn(500);
 
 });
+
+
+  $(".icons__wraps").owlCarousel({
+      loop: true,
+      margin: 0,
+      nav : true,
+      // autoplay: true,
+      navText: true,
+      navigation:true,
+      pagination : true,
+      items: 4,
+      dots: true,
+      singleItem:false
+    });

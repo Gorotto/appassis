@@ -254,6 +254,10 @@
   background-color: #ebdf23;
 }
 
+.layer-item__maps{
+  background-color: #ff9b30;
+}
+
 .layer-item__news, .layer-item__contacts{
   background-color: #bb2eac;
 }
@@ -327,4 +331,72 @@
   background-image: url("../img/icons/close-icon.png");
   size: 10px;
   cursor: pointer;
+}
+
+
+.checkbox{
+  size: 20px;
+  display: block;
+  position: relative;
+  float: left;
+  display: inline-block;
+  margin: 0 0 20px;
+  label{
+    float: left;
+    box-sizing: border-box;
+    text-align: left;
+    color: #797979;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  input[type="checkbox"] {
+      display:none;
+  }
+  input[type="checkbox"] + label span {
+    display:inline-block;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    cursor:pointer;
+    float: left;
+    font-size: 15px;
+    font-weight: 300;
+    color: #1a1a1a;
+    margin-right: 10px;
+    position: relative;
+    margin-left: -20px;
+  }
+
+
+  input[type="checkbox"]:checked + label span {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: absolute;
+    margin-left: -20px;
+    width: 19px;
+    height: 19px;
+    &::before{
+      content: "";
+      height: 2px;
+      background-color: #000;
+      position: absolute;
+      transform: rotate(50deg);
+      left: 1px;
+      margin-top: 9px;
+      width: 8px;
+    }
+    &::after{
+      content: "";
+      height: 2px;
+      background-color: #000;
+      position: absolute;
+      transform: rotate(-50deg);
+      left: 5px;
+      margin-top: 8px;
+      width: 10px;
+    }
+  }
 }

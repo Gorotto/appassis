@@ -1,65 +1,10 @@
-<!-- start html_open.html-->
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <!--для масштабируемых моделей-->
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!--для ссылок с мобильными телефонами-->
-    <meta name="format-detection" content="telephone=no">
-    <title></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/libs.min.css" rel="stylesheet" type="text/css">
-    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
-    <link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.min.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<!-- open .header -->
+<!-- @@include ../html_open.html -->
 
-<!-- end html_open.html-->
-
-<!-- start header.html-->
-
-<header class="header">
-<div class="container">
-  <div class="header__logo">
-    <img src="img/logo.png" alt="">
-  </div>
-  <div class="header__tarif">
-    <p>Тариф: <span>Бесплатный (Безлимитный)</span></p>
-  </div>
-  <div class="header__languages">
-    <a href="" class="active">Ru</a>
-    <a href="">En</a>
-    <a href="">Lt</a>
-  </div>
-</div>
-</header>
-
-<!-- end header.html-->
+<!-- @@include ../header.html -->
 
 <!-- main container-->
 <div class="container">
-<!-- start sidebar.html-->
-<aside class="aside">
-  <div class="sidebar-menu">
-    <ul>
-      <li><a href=""><i class="fa fa-home" aria-hidden="true"></i>Главная</a></li>
-      <li><a href=""><i class="fa fa-user" aria-hidden="true"></i>Мой профиль</a></li>
-      <li><a href=""><i class="fa fa-bar-chart" aria-hidden="true"></i>Статистика</a></li>
-      <li><a href=""><i class="fa fa-folder" aria-hidden="true"></i>Мои приложения</a></li>
-      <li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i>Мои заказы</a></li>
-      <li><a href=""><i class="fa fa-clone" aria-hidden="true"></i>Мои шаблоны</a></li>
-      <li><a href=""><i class="fa fa-usd" aria-hidden="true"></i>Мой биллинг</a></li>
-      <li class="active"><a href=""><i class="fa fa-file-text-o" aria-hidden="true"></i>Счета</a></li>
-      <li><a href=""><i class="fa fa-sign-out" aria-hidden="true"></i>Выход</a></li>
-    </ul>
-  </div>
-</aside>
-
-<!-- end sidebar.html-->
+<!-- @@include ../sidebar.html -->
 <form class="contents">
   <div class="main-steps">
     <div class="main-steps__item">
@@ -235,50 +180,88 @@
           <span class="layer-row__title">
             Имя страницы
           </span>
-          <div class="layer-item layer-item__contacts">
-            <img src="img/icons/contacts-pic.png" alt="">
+          <div class="layer-item layer-item__maps">
+            <img src="img/icons/geo-icon.png" alt="">
           </div>
           <a href="#" class="layer-row__edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-          <span class="layer-item__name">Контакты</span>
+          <span class="layer-item__name">Карты</span>
           <a href="#" class="delete-btn">Удалить</a>
         </div>
         <div class="layer-row">
-          <span class="layer-row__title">
-            Заголовок
-          </span>
-          <input type="text" class="white-btn">
-          <div class="contacts-wrap">
-            <div class="contacts-wrap__title">
-              <span>Название</span>
-              <span>Значение</span>
-            </div>
-            <div class="contacts-wrap__item">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <input type="text" class="white-btn">
-              <input type="text" class="white-btn">
-              <span class="closes"></span>
-            </div>
-            <div class="contacts-wrap__item">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <input type="text" class="white-btn">
-              <input type="text" class="white-btn">
-              <span class="closes"></span>
-            </div>
-            <div class="contacts-wrap__item">
-              <i class="fa fa-globe" aria-hidden="true"></i>
-              <input type="text" class="white-btn">
-              <input type="text" class="white-btn">
-              <span class="closes"></span>
-            </div>
-            <div class="contacts-wrap__item">
-              <i class="fa fa-home" aria-hidden="true"></i>
-              <input type="text" class="white-btn">
-              <input type="text" class="white-btn">
-              <span class="closes"></span>
-            </div>
-            <button class="green-btn">Добавить поле</button>
+          <div class="map-setting__row">
+            <span class="layer-row__title">
+              Адрес
+            </span>
+            <input type="text" class="white-btn" placeholder="Введите адрес">
+            <button class="green-btn">Найти</button>
           </div>
+          <div class="map-setting__row">
+            <div class="map-setting">
+              <span class="layer-row__title">
+                Широта
+              </span>
+              <input type="text" class="white-btn" placeholder="Значение широты">
+            </div>
+            <div class="map-setting">
+              <span class="layer-row__title">
+                Долгота
+              </span>
+              <input type="text" class="white-btn" placeholder="Значение долготы">
+            </div>
+            <div class="map-setting">
+              <span class="layer-row__title">
+                Зум
+              </span>
+              <div class="custom-select">
 
+              <input class="select" type="text" placeholder="9">
+              <a href="#" class="select__trigger js-search-option">
+                <i class="fa fa-chevron-down fa-lg" aria-hidden="true"></i>
+              </a>
+
+              <div class="anketa__select--option">
+
+                  <a href="#">9</a>
+
+                  <a href="#">10</a>
+
+                  <a href="#">11</a>
+
+              </div>
+            </div>
+          </div>
+          </div>
+          <span class="layer-row__title">
+            Показывать текст маркера по умолчанию
+          </span>
+          <div class="checkbox">
+            <input id="check1" type="checkbox" name="check" value="check1">
+            <label for="check1"><span></span></label>
+          </div>
+          <span class="layer-row__title">
+            Текст маркера
+          </span>
+          <textarea ></textarea>
+          <span class="layer-row__title">
+            Иконка
+          </span>
+          <div class="icons__wraps owl-carousel">
+            <div class="icons__wraps_item">
+              <img src="img/icons/flag1.png" alt="">
+            </div>
+            <div class="icons__wraps_item">
+              <img src="img/icons/flag2.png" alt="">
+            </div>
+            <div class="icons__wraps_item">
+              <img src="img/icons/flag3.png" alt="">
+            </div>
+            <div class="icons__wraps_item">
+              <img src="img/icons/flag4.png" alt="">
+            </div>
+            <div class="icons__wraps_item">
+              <img src="img/icons/flag4.png" alt="">
+            </div>
+          </div>
         </div>
         <div class="layer-row">
           <span class="layer-row__title">
@@ -326,15 +309,4 @@
 <!-- close container-->
 
 
-<!-- start html_close.html-->
-<script src='js/jquery-2.1.3.min.js' type="text/javascript"></script>
-<script src='js/jquery-ui.min.js' type="text/javascript"></script>
-<script src="js/bootstrap.min.js" type="text/javascript"></script>
-<script src="js/jquery.mousewheel.js" type="text/javascript"></script>
-<script src="js/owl.carousel.min.js" type="text/javascript"></script>
-<script src="js/datepicker.min.js" type="text/javascript"></script>
-<script src="js/script.min.js" type="text/javascript"></script>
-</body>
-</html>
-
-<!-- end html_close.html-->
+<!-- @@include ../html_close.html -->
