@@ -12,7 +12,7 @@
   }
 }
 
-.table-wrap__title{
+.table-wrap__title, .table-wrap-agent{
   width: 100%;
   float: left;
   border-top: 1px solid #e6e6e6;
@@ -47,9 +47,12 @@
   .status{
     color: $green;
   }
+  .status-activation{
+    color: $green;
+  }
 }
 
-.table-wrap__title, .table-wrap__row{
+.table-wrap__title, .table-wrap__row, .table-wrap-agent{
   .date{
     min-width: 185px;
     padding-left: 10px;
@@ -69,5 +72,41 @@
   }
   .ammount{
     min-width: 89px;
+  }
+  .number{
+    min-width: 30px;
+    text-align: center;
+  }
+  .status-activation{
+    min-width: 110px;
+  }
+  .thumb{
+    min-width: 70px;
+    img{
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+.table-wrap-agent{
+  .name{
+    min-width: 165px;
+  }
+  .mail{
+    min-width: 130px;
+  }
+  .phone{
+    min-width: 125px;
+  }
+  .status{
+    min-width: 80px;
+  }
+  .worked-date{
+    min-width: 95px;
+  }
+  .closes{
+    margin-top: 18px;
+    margin-left: 15px;
   }
 }
