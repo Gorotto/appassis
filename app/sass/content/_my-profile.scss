@@ -3,6 +3,13 @@
   float: left;
   padding: 25px;
   box-sizing: border-box;
+  @include breakpoint(max-width 770px){
+    .green-btn{
+      float: left;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+  }
 }
 
 .profile-wrap__photo{
@@ -46,6 +53,9 @@
       font-weight: 400;
       line-height: 30px;
     }
+  }
+  @include breakpoint(max-width 770px){
+    width: calc(100% - 160px);
   }
 }
 

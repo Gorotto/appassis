@@ -3,6 +3,9 @@
   float: left;
   padding: 60px 0 15px;
   box-sizing: border-box;
+  @include breakpoint(max-width 770px){
+    padding-top: 20px;
+  }
 }
 
 .billing-wrap__tarif, .billing-wrap__balans{
@@ -20,6 +23,9 @@
     font-size: 18px;
     font-weight: 600;
     float: left;
+  }
+  @include breakpoint(max-width 770px){
+    padding: 0 11px;
   }
 }
 .billing-wrap__tarif{

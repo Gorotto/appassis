@@ -9,6 +9,9 @@
   .white-btn, .green-btn{
     margin-bottom: 25px;
   }
+  @include breakpoint(max-width 770px){
+    overflow-x: scroll;
+  }
 }
 
 

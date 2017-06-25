@@ -5,6 +5,9 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.07);
   padding: 15px;
   box-sizing: border-box;
+  @include breakpoint(max-width 770px){
+    width: calc(100% - 220px);
+  }
 }
 
 .setting-wrap__panel{
@@ -33,6 +36,9 @@
   min-width: 60%;
   box-sizing: border-box;
   padding-top: 11px;
+  @include breakpoint(max-width 770px){
+    min-width: 56%;
+  }
   h4{
     margin: 0;
     float: left;
@@ -217,6 +223,10 @@
     size: 100%;
     // object-fit: cover;
   }
+  @include breakpoint(max-width 770px){
+    width: 100px;
+    margin-right: 10px;
+  }
 }
 
 .setting-wrap__content-thems__item.active:after{
@@ -293,6 +303,9 @@
     margin: 0;
     width: 150px;
   }
+  @include breakpoint(max-width 770px){
+    width: 56%;
+  }
 }
 
 .new-design__wrap{
@@ -325,6 +338,9 @@
       font-weight: 300;
       line-height: 38px;
       margin-left: 24px;
+    }
+    @include breakpoint(max-width 770px){
+      width: 68%;
     }
   }
 }
@@ -387,6 +403,9 @@
   display: inline-block;
   float: right;
   position: relative;
+  @include breakpoint(max-width 770px){
+    width: 200px;
+  }
 }
 
 .iphone-wrap__pic{
@@ -398,13 +417,29 @@
   img{
     size: 100%;
   }
+  @include breakpoint(max-width 770px){
+    width: 178px;
+    height: 317px;
+  }
 }
 
 
 .toogle-content{
   width: 100%;
   float: left;
-  display: inline-block;
+  // display: inline-block;
+  display: none;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.design__content{
+  display: block;
+  width: 100%;
+  float: left;
   padding-bottom: 50px;
   padding-top: 10px;
   box-sizing: border-box;

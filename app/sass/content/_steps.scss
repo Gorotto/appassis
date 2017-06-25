@@ -118,6 +118,9 @@
   padding: 0 28px;
   box-sizing: border-box;
   line-height: 20px;
+  @include breakpoint(max-width 770px){
+    padding: 0;
+  }
   &:after{
     content: "";
     background-image: url("../img/icons/small-arrow.png");

@@ -6,6 +6,9 @@
   box-sizing: border-box;
   background-color: #f8f8f8;
   margin-top: 2px;
+  @include breakpoint(max-width 770px){
+    width: 100%;
+  }
 }
 .content-wrap{
   width: 100%;
@@ -94,6 +97,9 @@
     border: 1px solid #d81313;
     background-color: #fff;
     color: #d81313;
+  }
+  @include breakpoint(max-width 770px){
+    min-width: 90px;
   }
 }
 .breadcrumbs{
@@ -267,6 +273,9 @@
   i{
     color: #fff;
     transform: translateY(45%);
+    @include breakpoint(max-width 770px){
+      transform: translateY(18%);
+    }
   }
 }
 
@@ -275,6 +284,9 @@
   i{
     color: #fff;
     transform: translateY(45%);
+    @include breakpoint(max-width 770px){
+      transform: translateY(18%);
+    }
   }
 }
 
@@ -283,14 +295,20 @@
   i{
     color: #fff;
     transform: translateY(45%);
+    @include breakpoint(max-width 770px){
+      transform: translateY(18%);
+    }
   }
 }
 
-.layer-item__instagram{
+.layer-item__instagram, .layer-item__menu{
   background-color: #c5c5c5;
   i{
     color: #fff;
     transform: translateY(45%);
+    @include breakpoint(max-width 770px){
+      transform: translateY(18%);
+    }
   }
 }
 
@@ -299,6 +317,9 @@
   i{
     color: #fff;
     transform: translateY(45%);
+    @include breakpoint(max-width 770px){
+      transform: translateY(18%);
+    }
   }
 }
 
@@ -307,6 +328,9 @@
   i{
     color: #fff;
     transform: translateY(45%);
+    @include breakpoint(max-width 770px){
+      transform: translateY(18%);
+    }
   }
 }
 
@@ -315,6 +339,9 @@
   i{
     color: #fff;
     transform: translateY(45%);
+    @include breakpoint(max-width 770px){
+      transform: translateY(18%);
+    }
   }
 }
 
@@ -399,4 +426,11 @@
       width: 10px;
     }
   }
+}
+
+.scroll-wrap{
+  width: 850px;
+  float: left;
+  position: relative;
+  cursor: pointer;
 }

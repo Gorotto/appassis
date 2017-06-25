@@ -6,6 +6,10 @@
   box-sizing: border-box;
   margin-top: 25px;
   margin-bottom: 50px;
+  overflow: hidden;
+  @include breakpoint(max-width 770px){
+    overflow-x: scroll;
+  }
 }
 
 .table-wrap__title{

@@ -1,8 +1,12 @@
-<div id="modal_form">
-      <span id="modal_close"></span>
+<form id="modal_form">
+      <span class="modal_close"></span>
   <h2>Добавление товара</h2>
   <div class="product-pic">
     <img src="img/product-fon.png" alt="">
+    <div class="add-photo">
+      <input type="file" name="file" id="file8" class="upload" />
+      <label for="file8"></label>
+    </div>
   </div>
   <div class="product-info">
     <div class="product-info__row">
@@ -52,5 +56,13 @@
     </div>
     </div>
   </div>
-</div>
+  <span class="layer-row__title">
+    Описание *
+  </span>
+  <div class="product-redactor">
+
+  </div>
+  <button class="green-btn">Сохранить</button>
+  <button class="white-btn">Отмена</button>
+</form>
 <div id="overlay"></div>

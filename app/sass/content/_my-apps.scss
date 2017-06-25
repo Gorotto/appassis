@@ -172,6 +172,7 @@
   width: 180px;
 
   margin-right: 31px;
+  margin-bottom: 30px;
   &:nth-of-type(4){
     margin-right: 0;
   }
@@ -184,7 +185,10 @@
   &:nth-of-type(16){
     margin-right: 0;
   }
-
+  @include breakpoint(max-width 770px){
+    width: 151px;
+    margin-right: 15px;
+  }
 }
 
 .my-apps-wrap__item_thumb{
