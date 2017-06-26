@@ -7,12 +7,46 @@
   margin-top: 25px;
   margin-bottom: 50px;
   overflow: hidden;
-  @include breakpoint(max-width 770px){
+  // @include breakpoint(max-width 770px){
     overflow-x: scroll;
-  }
+  // }
+}
+.table-wrap::-webkit-scrollbar-button {
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:3px;
+  height:0px
 }
 
-.table-wrap__title, .table-wrap-agent{
+.table-wrap::-webkit-scrollbar-track {
+  background-color:rgba(0, 174, 175, 0.26);
+  height: 4px;
+}
+
+.table-wrap::-webkit-scrollbar-thumb {
+-webkit-border-radius: 10px;
+border-radius: 3px;
+background-color:$green;
+height: 4px;
+}
+
+.table-wrap::-webkit-scrollbar-thumb:hover{
+background-color:#a4a9bb;
+}
+
+.table-wrap::-webkit-resizer{
+background-image:url('');
+background-repeat:no-repeat;
+width:3px;
+height:0px
+}
+
+.table-wrap::-webkit-scrollbar{
+  width: 3px;
+  height: 4px;
+}
+
+.table-wrap__title, .table-wrap-agent, .table-wrap-client{
   width: 100%;
   float: left;
   border-top: 1px solid #e6e6e6;
@@ -52,7 +86,10 @@
   }
 }
 
-.table-wrap__title, .table-wrap__row, .table-wrap-agent{
+.table-wrap__title,
+.table-wrap__row,
+.table-wrap-client,
+.table-wrap-agent{
   .date{
     min-width: 185px;
     padding-left: 10px;
@@ -108,5 +145,42 @@
   .closes{
     margin-top: 18px;
     margin-left: 15px;
+  }
+}
+
+.table-wrap-client{
+  span, a{
+    padding: 15px 0;
+    box-sizing: border-box;
+    line-height: normal;
+  }
+  .name{
+    width: 95px;
+    line-height: normal;
+  }
+  .mail{
+    width: 115px;
+  }
+  .phone{
+    width: 105px;
+  }
+  .company{
+    width: 80px;
+  }
+  .responsible{
+    width: 175px;
+    line-height: normal;
+  }
+  .status{
+    width: 65px;
+    line-height: normal;
+  }
+  .worked-date{
+    width: 155px;
+    line-height: normal;
+  }
+  .closes{
+    margin-left: 10px;
+    margin-top: 20px;
   }
 }

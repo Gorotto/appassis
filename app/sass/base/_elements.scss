@@ -301,7 +301,7 @@
   }
 }
 
-.layer-item__instagram, .layer-item__menu{
+.layer-item__instagram, .layer-item__menu, .layer-item__trash{
   background-color: #c5c5c5;
   i{
     color: #fff;
@@ -429,7 +429,7 @@
 }
 
 .scroll-wrap{
-  width: 850px;
+  width: 1250px;
   float: left;
   position: relative;
   cursor: pointer;
