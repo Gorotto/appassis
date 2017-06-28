@@ -44,6 +44,19 @@
       bottom: 0;
       display: inline-block;
     }
+    &:hover{
+      // background-color: #fff;
+
+      box-sizing: border-box;
+      color: $green;
+      &:after, &:before{
+        background-color: $green;
+      }
+      input{
+        color: $green;
+        border-bottom: 1px solid $green;
+      }
+    }
   }
   input{
     width: 100%;
@@ -55,6 +68,7 @@
     float: left;
     display: inline-block;
     position: relative;
+    box-sizing: border-box;
 
   }
 }

@@ -71,6 +71,11 @@
     line-height: 40px;
     text-align: center;
     color: #333;
+    &:hover{
+      background-color: #fff;
+      border: 1px solid $green;
+      color: $green;
+    }
   }
   .white-btn{
     float: left;

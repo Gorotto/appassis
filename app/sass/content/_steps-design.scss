@@ -283,6 +283,12 @@
       top: -14px;
       left: 2px;
     }
+    &:hover{
+      background-color: $green;
+      i{
+        color: #fff;
+      }
+    }
   }
 }
 
